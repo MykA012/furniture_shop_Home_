@@ -1,4 +1,5 @@
 from django.db import models
+# aaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 class Categories(models.Model):
     name = models.CharField(max_length=150, unique=True, verbose_name='Название')
