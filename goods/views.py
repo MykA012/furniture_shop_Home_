@@ -84,3 +84,4 @@ def catalog(request):
 
 def product(request):
     return render(request, "goods/product.html")
+
