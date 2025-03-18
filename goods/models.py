@@ -1,5 +1,5 @@
 from django.db import models
-# aaaaaaaaaaaaaaaaaaaaaaaaaaa
+
 
 class Categories(models.Model):
     name = models.CharField(max_length=150, unique=True, verbose_name='Название')
@@ -29,7 +29,8 @@ class Products(models.Model):
         db_table = 'product'
         verbose_name = 'Продукт'
         verbose_name_plural = 'Продукты'
-    
+
+
     def __str__(self):
         return f'{self.name} | Колличество - {self.quantity} | Скидка - {self.discount}'
     
